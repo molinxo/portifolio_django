@@ -1,0 +1,42 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <title>{% block title %}Portfolio{% endblock %} | JM</title>
+    </head>
+    <body class="body">
+        <header class="header">
+            <a href="{% url 'core:index' %}" class="logo">JM</a>
+
+            <nav class="navbar">
+                <a href="{% url 'core:index' %}">Home</a>
+                <a href="{% url 'projects:projects' %}">Projects</a>
+                <a href="{% url 'core:about' %}">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        {% block content %} {% endblock %}
+
+        <footer class="footer">
+            <div class="container">
+                <a href="{% url 'core:index' %}" class="logo" style="color: rgb(251, 255, 214);">JM</a>
+
+                <div class="social-links">
+                    <h4>follow me</h4>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/molinxo"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jean-molin-us/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

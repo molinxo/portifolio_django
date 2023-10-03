@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Lexend+Deca:wght@300;700&family=Mystery+Quest&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.body {
+    height: auto;
+    background-color: rgb(251, 255, 214);
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 1vh;
+    padding: 20px 70px;
+    background: rgb(251, 255, 214);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo { 
+    color: rgb(241, 77, 77);
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 40px;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(241, 77, 77);
+}
+
+.container {
+    text-align: center;
+}
+
+.social-links {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.social-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.prj-grid {
+    margin: 1vh 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+}   
+
+
+.prj-cont {
+    height: fit-content;
+    margin-top: 1vh;
+
+}
+
+.prj-dsc {
+    text-align: center;
+    width: 16rem;
+    height: 20rem;
+    padding: 1.5rem;
+    background-color: purple;
+}
+
+.prj-dsc img {
+    margin-bottom: 0.5rem;
+    width: 12rem;
+    height: 12rem;
+}
