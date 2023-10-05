@@ -18,13 +18,13 @@
 
             <nav class="navbar">
                 <a href="{% url 'core:index' %}">Home</a>
-                <a href="{% url 'projects:projects' %}">Projects</a>
                 <a href="{% url 'core:about' %}">About</a>
                 <a href="#">Contact</a>
+                <a href="{% url 'projects:projects' %}">Projects</a>
             </nav>
         </header>
-
-        {% block content %} {% endblock %}
+        
+        <div class="prj-grid">{% block content %} {% endblock %}</div>
 
         <footer class="footer">
             <div class="container">

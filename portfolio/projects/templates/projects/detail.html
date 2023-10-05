@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{{item.name}}{% endblock %}
+
+{% block content %}
+<div>
+    <div>
+        <img src="{{ item.image.url }}">
+    </div>
+
+    <div>
+        <h1>{{ item.name }}</h1>
+        
+        {% if item.description %}
+            <p>
+                <strong">Description:</strong><br>
+                {{ item.description }}
+            </p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
